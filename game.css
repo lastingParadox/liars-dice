@@ -1,0 +1,16 @@
+.container {
+    padding: 50px;
+    border: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: brown;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playerOneHand .img {}
