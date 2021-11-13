@@ -25,6 +25,9 @@ body {
     font-size: 75px;
     text-align: center;
     border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .inputcontainer {
@@ -83,7 +86,7 @@ body {
     border-radius: 12px;
     border: none;
     transition: all 0.5s;
-    box-shadow: black;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
 }
 
 .rules {
@@ -98,6 +101,7 @@ body {
     border-radius: 12px;
     border: none;
     transition: all 0.5s;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
 }
 
 button {
@@ -114,4 +118,17 @@ button {
 
 .buttons :hover{
    background-color: whitesmoke;
+}
+
+p {
+    border: none;
+    background-color: #F58A8A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
+    margin-top: 300px;
+    margin-left: 2em;
+    margin-right: 2em;
 }
