@@ -34,13 +34,19 @@ player2 = new Player(name2);
 player3 = new Player(name3);
 player4 = new Player(name4);
 */
-const players = [new Player(name1), new Player(name2), new Player(name3), new Player(name4)];
+const name1 = ""; //BUTTON INPUT------------------------------------------
+const name2 = ""; //BUTTON INPUT------------------------------------------
+const name3 = ""; //BUTTON INPUT------------------------------------------
+const name4 = ""; //BUTTON INPUT------------------------------------------
+
+let players = [new Player(name1), new Player(name2), new Player(name3), new Player(name4)];
 
 // Pick a random player to start off the game
 const first = Math.floor(Math.random() * 4);
 
 let firstPlace = players[first];
 
+// Keep playing the game
 while (firstPlace.points < 4)
 {
 	for (let i = 0; i < players.length; i++)
@@ -82,11 +88,18 @@ while (firstPlace.points < 4)
 		}
 	}
 
-	// let challenger = players[current];
-	// let liar = players[current - 1];
-	if (// CHALLENGE)
-		contest(players[current], players[current - 1]);
+	// Go around and make claims
+	for (let i = 0; i < players.length; i++)
+	{
+		// let challenger = players[i];
+		// let liar = players[i - 1];
+		if (// CHALLENGE)----------------------------------------------------
+		{
+			contest(players[i], players[(i == 0 ? 5 : (i - 1))]);
+			break;
+		}
 
-	if (players[current].points > firstPlace.points)
-		firstPlace = players[current];
+		players[i].claimNum = 0; //INPUT-------------------------------------
+		players[i].claimDie = 0; //INPUT-------------------------------------
+	}
 }
