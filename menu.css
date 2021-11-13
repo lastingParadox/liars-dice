@@ -1,6 +1,22 @@
-body{
-    background-color: rgb(201, 114, 114);
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .titlebox{
     border: none;
     display: block;
@@ -22,6 +38,7 @@ body{
     text-align: center;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
 }
 
 .player2{
@@ -31,6 +48,7 @@ body{
     margin-top: 50px;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
 }
 
 .player3{
@@ -40,6 +58,7 @@ body{
     margin-top: 50px;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
 }
 
 .player4{
@@ -50,6 +69,7 @@ body{
     margin-top: 50px;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
 }
 
 .start {
@@ -62,6 +82,8 @@ body{
     margin-top: 50px;
     border-radius: 12px;
     border: none;
+    transition: all 0.5s;
+    box-shadow: black;
 }
 
 .rules {
@@ -75,7 +97,7 @@ body{
     margin-top: 50px;
     border-radius: 12px;
     border: none;
-    transition: all 0.2s;
+    transition: all 0.5s;
 }
 
 button {

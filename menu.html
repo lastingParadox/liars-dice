@@ -7,22 +7,22 @@
         <body">
             <h1 class="titlebox">Liar's Dice</h1>
             <div class="inputcontainer">
-                <input class="player1" placeholder="Player 1 Name">
+                <input id="player_1" class="player1" placeholder="Player 1 Name">
                 <br>
-                <input class="player2" placeholder="Player 2 Name">
+                <input id="player_2" class="player2" placeholder="Player 2 Name">
                 <br>
-                <input class="player3" placeholder="Player 3 Name">
+                <input id="player_3" class="player3" placeholder="Player 3 Name">
                 <br>
-                <input class="player4" placeholder="Player 4 Name">
+                <input id="player_4" class="player4" placeholder="Player 4 Name">
             </div>
             <div class= "buttons">
                 <a href="game.html">
-                    <button class="start">Start</button>
+                    <button class="start" onclick="getNames()">Start</button>
                 </a>
                 <br>
                 <button class="rules" onclick="test('Rules')">How to Play</button>
                 <script src="menu.js"></script>
+                <script src="mechanics.js"></script>
             </div>
-            
         </body>
     </html>

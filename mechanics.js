@@ -34,10 +34,29 @@ player2 = new Player(name2);
 player3 = new Player(name3);
 player4 = new Player(name4);
 */
-const name1 = ""; //BUTTON INPUT------------------------------------------
-const name2 = ""; //BUTTON INPUT------------------------------------------
-const name3 = ""; //BUTTON INPUT------------------------------------------
-const name4 = ""; //BUTTON INPUT------------------------------------------
+let name1 = ""; //BUTTON INPUT------------------------------------------
+let name2 = ""; //BUTTON INPUT------------------------------------------
+let name3 = ""; //BUTTON INPUT------------------------------------------
+let name4 = ""; //BUTTON INPUT------------------------------------------
+// Grabs name and sets it to the appropriate player. Uses Placeholder if no input is given
+function getNames(){
+	name1 = document.getElementById("player_1").value;
+	if (name1 == "")
+		name1 = "Player 1";
+	document.getElementById("player_1").value = "";
+	name2 = document.getElementById("player_2").value;
+	if (name2 == "")
+		name2 = "Player 2";
+	document.getElementById("player_2").value = "";
+	name3 = document.getElementById("player_3").value;
+	if (name3 == "")
+		name3 = "Player 3";
+	document.getElementById("player_3").value = "";
+	name4 = document.getElementById("player_4").value;
+	if (name4 == "")
+		name4 = "Player 4";
+	document.getElementById("player_4").value = "";
+}
 
 let players = [new Player(name1), new Player(name2), new Player(name3), new Player(name4)];
 
@@ -93,7 +112,7 @@ while (firstPlace.points < 4)
 	{
 		// let challenger = players[i];
 		// let liar = players[i - 1];
-		if (// CHALLENGE)----------------------------------------------------
+		if (true)// CHALLENGE)----------------------------------------------------
 		{
 			contest(players[i], players[(i == 0 ? 5 : (i - 1))]);
 			break;
