@@ -97,3 +97,32 @@ input {
 .die {
     width: 120px;
 }
+
+.glow {
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px white;
+    }
+    to {
+      box-shadow: 0 0 10px 10px white;
+    }
+}
+
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
