@@ -1,16 +1,128 @@
-.container {
-    padding: 50px;
+body {
+    background-color: rgb(201, 114, 114);
+}
+
+p {
+    margin: 0px 0px 0px 0px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 10x;
+    border-radius: 0px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#playerContainer {
+    padding: 10px;
+    border: none;
+    top: 4%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: burlywood;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10em;
+}
+
+.playerBox {
+    text-align: center;
+}
+
+#container {
+    padding: 25px;
     border: none;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 43%;
     left: 50%;
-    background-color: brown;
-    box-shadow: 0 15px 35px rgba(50,50,50,0.15);
+    background-color: burlywood;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.playerOneHand .img {}
+#actionContainer {
+    padding: 25px;
+    border: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 87%;
+    left: 50%;
+    background-color: burlywood;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.50);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15em;
+}
+
+#claim {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#claimButton {
+    width: 100%;
+    align-self: center;
+    background-color: green;
+
+}
+
+#claimInputs {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 2.5em;
+}
+
+.die {
+    width: 120px;
+}
+
+.glow {
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px white;
+    }
+    to {
+      box-shadow: 0 0 10px 10px white;
+    }
+}
+
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-8deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}

@@ -6,12 +6,15 @@
    height="100"
    viewBox="0 0 100 100"
    version="1.1"
-   sodipodi:docname="dice-01.svg"
+   sodipodi:docname="dice-00.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs33" />
   <sodipodi:namedview
@@ -24,7 +27,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="8.01"
-     inkscape:cx="50"
+     inkscape:cx="25.405743"
      inkscape:cy="50"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
@@ -40,9 +43,26 @@
        d="M86.61173,6.46115H13.38221a7.05794,7.05794,0,0,0-6.92106,7.18726V86.35494A7.05464,7.05464,0,0,0,13.379,93.53885H86.61133a7.06452,7.06452,0,0,0,6.92752-7.194V13.71227A7.09557,7.09557,0,0,0,86.61173,6.46115Z"
        style="fill: #fff;stroke: #e92e3d;stroke-miterlimit: 10;stroke-width: 3px"
        id="path24" />
-    <path
-       d="m 50.480026,60.891242 a 9.31067,9.31067 0 1 1 8.95611,-9.29386 9.13869,9.13869 0 0 1 -8.95611,9.29386 z"
-       style="fill:#e92e3d"
-       id="path26" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.139px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#e92e3d;fill-opacity:1;stroke:none;stroke-width:1.45347"
+       x="35.941139"
+       y="71.141121"
+       id="text1683"
+       transform="scale(1.0379606,0.96342771)"><tspan
+         sodipodi:role="line"
+         id="tspan1681"
+         x="35.941139"
+         y="71.141121"
+         style="stroke-width:1.45347">?</tspan></text>
   </g>
+  <metadata
+     id="metadata26839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>dice</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
