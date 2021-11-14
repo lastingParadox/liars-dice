@@ -2,9 +2,9 @@
 <svg
    id="Layer_1"
    data-name="Layer 1"
-   width="100"
-   height="100"
-   viewBox="0 0 100 100"
+   width="90.080688"
+   height="90.077698"
+   viewBox="0 0 90.080688 90.077698"
    version="1.1"
    sodipodi:docname="dice-00.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -25,39 +25,46 @@
      inkscape:pageshadow="0"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="8.01"
-     inkscape:cx="25.405743"
-     inkscape:cy="50"
+     inkscape:cx="40.763365"
+     inkscape:cy="43.740434"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g28" />
+     inkscape:current-layer="g28"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1897"
+       originx="-4.9599289"
+       originy="-4.96115" />
+  </sodipodi:namedview>
   <title
      id="title22">dice</title>
   <g
-     id="g28">
+     id="g28"
+     transform="translate(-4.9599289,-4.96115)">
     <path
-       d="M86.61173,6.46115H13.38221a7.05794,7.05794,0,0,0-6.92106,7.18726V86.35494A7.05464,7.05464,0,0,0,13.379,93.53885H86.61133a7.06452,7.06452,0,0,0,6.92752-7.194V13.71227A7.09557,7.09557,0,0,0,86.61173,6.46115Z"
-       style="fill: #fff;stroke: #e92e3d;stroke-miterlimit: 10;stroke-width: 3px"
+       d="M 86.61173,6.46115 H 13.38221 a 7.05794,7.05794 0 0 0 -6.92106,7.18726 v 72.70653 a 7.05464,7.05464 0 0 0 6.91785,7.18391 h 73.23233 a 7.06452,7.06452 0 0 0 6.92752,-7.194 V 13.71227 A 7.09557,7.09557 0 0 0 86.61173,6.46115 Z"
+       style="fill:#e92e3d;fill-opacity:1;stroke:#e92e3d;stroke-width:3px;stroke-miterlimit:10"
        id="path24" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:58.139px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;fill:#e92e3d;fill-opacity:1;stroke:none;stroke-width:1.45347"
-       x="35.941139"
-       y="71.141121"
-       id="text1683"
-       transform="scale(1.0379606,0.96342771)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1;stroke:none"
+       x="35.1875"
+       y="67.355469"
+       id="text3736"><tspan
          sodipodi:role="line"
-         id="tspan1681"
-         x="35.941139"
-         y="71.141121"
-         style="stroke-width:1.45347">?</tspan></text>
+         id="tspan3734"
+         x="35.1875"
+         y="67.355469">?</tspan></text>
   </g>
   <metadata
-     id="metadata26839">
+     id="metadata2168">
     <rdf:RDF>
       <cc:Work
          rdf:about="">

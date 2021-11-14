@@ -2,9 +2,9 @@
 <svg
    id="Layer_1"
    data-name="Layer 1"
-   width="100"
-   height="100"
-   viewBox="0 0 100 100"
+   width="90.080688"
+   height="90.077698"
+   viewBox="0 0 90.080688 90.077698"
    version="1.1"
    sodipodi:docname="dice-01.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -22,27 +22,37 @@
      inkscape:pageshadow="0"
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
-     showgrid="false"
+     showgrid="true"
      inkscape:zoom="8.01"
-     inkscape:cx="50"
-     inkscape:cy="50"
+     inkscape:cx="36.516854"
+     inkscape:cy="37.01623"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g28" />
+     inkscape:current-layer="g28">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1897"
+       originx="-4.9599289"
+       originy="-4.96115" />
+  </sodipodi:namedview>
   <title
      id="title22">dice</title>
   <g
-     id="g28">
+     id="g28"
+     transform="translate(-4.9599289,-4.96115)">
     <path
-       d="M86.61173,6.46115H13.38221a7.05794,7.05794,0,0,0-6.92106,7.18726V86.35494A7.05464,7.05464,0,0,0,13.379,93.53885H86.61133a7.06452,7.06452,0,0,0,6.92752-7.194V13.71227A7.09557,7.09557,0,0,0,86.61173,6.46115Z"
-       style="fill: #fff;stroke: #e92e3d;stroke-miterlimit: 10;stroke-width: 3px"
+       d="M 86.61173,6.46115 H 13.38221 a 7.05794,7.05794 0 0 0 -6.92106,7.18726 v 72.70653 a 7.05464,7.05464 0 0 0 6.91785,7.18391 h 73.23233 a 7.06452,7.06452 0 0 0 6.92752,-7.194 V 13.71227 A 7.09557,7.09557 0 0 0 86.61173,6.46115 Z"
+       style="fill:#e92e3d;fill-opacity:1;stroke:#e92e3d;stroke-width:3px;stroke-miterlimit:10"
        id="path24" />
-    <path
-       d="m 50.480026,60.891242 a 9.31067,9.31067 0 1 1 8.95611,-9.29386 9.13869,9.13869 0 0 1 -8.95611,9.29386 z"
-       style="fill:#e92e3d"
-       id="path26" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899"
+       cx="50"
+       cy="50"
+       rx="9.5043678"
+       ry="10.01225" />
   </g>
 </svg>
