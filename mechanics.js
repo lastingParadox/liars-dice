@@ -1,3 +1,4 @@
+//console.log("TEST!!!");
 // Create a player object
 function Player(name)
 {
@@ -8,57 +9,73 @@ function Player(name)
 	this.claimDie = 0;
 };
 
-// There was a challenge
-function contest(challenger, liar)
+// Get the names of all players
+function getNames()
 {
+	name1 = document.getElementById("player_1").value;
+	if (name1 === "")
+		name1 = "Player 1";
+	globalThis.name1 = name1;
+	document.getElementById("player_1").value = "";
+
+	name2 = document.getElementById("player_2").value;
+	if (name2 === "")
+		name2 = "Player 2";
+	globalThis.name2 = name2;
+	document.getElementById("player_2").value = "";
+
+	name3 = document.getElementById("player_3").value;
+	if (name3 === "")
+		name3 = "Player 3";
+	globalThis.name3 = name3;
+	document.getElementById("player_3").value = "";
+
+	globalThis.name4 = document.getElementById("player_4").value;
+	if (name4 === "")
+		name4 = "Player 4";
+	globalThis.name4 = name4;
+	document.getElementById("player_4").value = "";
+
+	let players = [new Player(name1), new Player(name2), new Player(name3), new Player(name4)];
+	globalThis.players = players;
+}
+
+// Set a players claim
+function setClaim()
+{
+	players[current].claimNum = document.getElementById("num");
+	players[current].claimDie = document.getElementById("die");
+}
+
+// There was a challenge
+let claimCheck = new Array(6).fill(0);
+function contest()
+{
+	const challenger = players[current];
+	const liar = players[(current == 0 ? 5 : (current - 1))]
+
 	// If liar was corrrect
-	if (claimCheck[liar.claimDie] == liar.claimNum)
+	if (claimCheck[liar.claimDie] >= liar.claimNum)
 	{
 		liar.points++;
-		if (liar.points > firstPlace.points)
-			firstPlace = liar;
+		if (liar.points > globalThis.firstPlace.points)
+			globalThis.firstPlace = liar;
 	}
 	// If challenger was correct
 	else
 	{
 		challenger.points++;
-		if (challenger.points > firstPlace.points)
-			firstPlace = challenger;
+		if (challenger.points > globalThis.firstPlace.points)
+			globalThis.firstPlace = challenger;
 	}
 }
 
-// Create players
-/*
-player1 = new Player(name1);
-player2 = new Player(name2);
-player3 = new Player(name3);
-player4 = new Player(name4);
-*/
-let name1 = ""; //BUTTON INPUT------------------------------------------
-let name2 = ""; //BUTTON INPUT------------------------------------------
-let name3 = ""; //BUTTON INPUT------------------------------------------
-let name4 = ""; //BUTTON INPUT------------------------------------------
-// Grabs name and sets it to the appropriate player. Uses Placeholder if no input is given
-function getNames(){
-	name1 = document.getElementById("player_1").value;
-	if (name1 == "")
-		name1 = "Player 1";
-	document.getElementById("player_1").value = "";
-	name2 = document.getElementById("player_2").value;
-	if (name2 == "")
-		name2 = "Player 2";
-	document.getElementById("player_2").value = "";
-	name3 = document.getElementById("player_3").value;
-	if (name3 == "")
-		name3 = "Player 3";
-	document.getElementById("player_3").value = "";
-	name4 = document.getElementById("player_4").value;
-	if (name4 == "")
-		name4 = "Player 4";
-	document.getElementById("player_4").value = "";
-}
+let name1 = "Player 1";
+let name2 = "Player 2";
+let name3 = "Player 3";
+let name4 = "Player 4";
 
-let players = [new Player(name1), new Player(name2), new Player(name3), new Player(name4)];
+let players = [];
 
 // Pick a random player to start off the game
 const first = Math.floor(Math.random() * 4);
@@ -78,7 +95,7 @@ while (firstPlace.points < 4)
 	}
 
 	// Count how many of each dice there are
-	let claimCheck = new Array(6).fill(0);
+	//let claimCheck = new Array(6).fill(0);
 	for (let i = 0; i < players.length; i++)
 	{
 		for (let j = 0; j < 5; j++)
@@ -108,17 +125,10 @@ while (firstPlace.points < 4)
 	}
 
 	// Go around and make claims
+	let current = first;
 	for (let i = 0; i < players.length; i++)
 	{
-		// let challenger = players[i];
-		// let liar = players[i - 1];
-		if (true)// CHALLENGE)----------------------------------------------------
-		{
-			contest(players[i], players[(i == 0 ? 5 : (i - 1))]);
-			break;
-		}
+		current = i % (players.length - 1);
 
-		players[i].claimNum = 0; //INPUT-------------------------------------
-		players[i].claimDie = 0; //INPUT-------------------------------------
 	}
 }
