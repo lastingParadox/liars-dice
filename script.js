@@ -18,6 +18,7 @@ playerOne = {
     hand: [0,0,0,0,0],
     points: 0,
     html: "playerOneHand",
+    winner: false,
 }
 
 playerTwo = {
@@ -25,6 +26,7 @@ playerTwo = {
     hand: [0,0,0,0,0],
     points: 0,
     html: "playerTwoHand",
+    winner: false,
 }
 
 playerThree = {
@@ -32,6 +34,7 @@ playerThree = {
     hand: [0,0,0,0,0],
     points: 0,
     html: "playerThreeHand",
+    winner: false,
 }
 
 playerFour = {
@@ -39,6 +42,7 @@ playerFour = {
     hand: [0,0,0,0,0],
     points: 0,
     html: "playerFourHand",
+    winner: false,
 }
 
 const players = [playerOne, playerTwo, playerThree, playerFour];
@@ -48,6 +52,29 @@ amount = 1;
 dieFace = 1;
 claim = [0,0]
 
+function getNames(){
+    sessionStorage.setItem("player1Name", document.getElementById("player_1").value);
+    if (sessionStorage.getItem("player1Name") === "")
+        sessionStorage.setItem("player1Name","Player 1");
+    document.getElementById("player_1").value = "";
+
+    sessionStorage.setItem("player2Name", document.getElementById("player_2").value);
+    if (sessionStorage.getItem("player2Name") === "")
+        sessionStorage.setItem("player2Name","Player 2"); 
+    document.getElementById("player_2").value = "";
+
+    sessionStorage.setItem("player3Name", document.getElementById("player_3").value);
+    if (sessionStorage.getItem("player3Name") === "")
+        sessionStorage.setItem("player3Name","Player 3");
+    document.getElementById("player_3").value = "";
+
+    sessionStorage.setItem("player4Name", document.getElementById("player_4").value);
+    if (sessionStorage.getItem("player4Name") === "")
+        sessionStorage.setItem("player4Name","Player 4");
+    document.getElementById("player_4").value = "";
+    //console.log(sessionStorage.getItem("player1Name") + sessionStorage.getItem("player2Name") + sessionStorage.getItem("player3Name") + sessionStorage.getItem("player4Name"));
+}
+//console.log(sessionStorage.getItem("player1Name") + sessionStorage.getItem("player2Name") + sessionStorage.getItem("player3Name") + sessionStorage.getItem("player4Name"));
 function roll() {
     document.querySelectorAll(".die").forEach(function(die) {
       die.classList.add("shake");
@@ -61,13 +88,35 @@ function roll() {
     );
 };
 
+function initNames(){
+    playerOne.name = sessionStorage.getItem("player1Name");
+    playerTwo.name = sessionStorage.getItem("player2Name");
+    playerThree.name = sessionStorage.getItem("player3Name");
+    playerFour.name = sessionStorage.getItem("player4Name");
+
+    document.getElementById("playerOneScore").innerHTML = playerOne.name;
+    document.getElementById("playerTwoScore").innerHTML = playerTwo.name;
+    document.getElementById("playerThreeScore").innerHTML = playerThree.name;
+    document.getElementById("playerFourScore").innerHTML = playerFour.name;
+
+    document.getElementById("playerOneHand").innerHTML = playerOne.name + "'s Hand";
+    document.getElementById("playerTwoHand").innerHTML = playerTwo.name + "'s Hand";
+    document.getElementById("playerThreeHand").innerHTML = playerThree.name + "'s Hand";
+    document.getElementById("playerFourHand").innerHTML = playerFour.name + "'s Hand";
+    
+    console.log(playerOne.name + " " +
+                playerTwo.name + " " +
+                playerThree.name + " " +
+                playerFour.name);
+    
+    onNewGame();
+}
+
 function onNewGame() {
     document.getElementById("downArrow").style.visibility = 'hidden';
     document.getElementById("downDiceArrow").style.visibility = 'hidden';
-    //document.querySelector("#amountInput").setAttribute("min", 1);
-    //document.querySelector("#dieFaceInput").setAttribute("min", 1);
-    //document.querySelector("#amountInput").value = 1;
-    //document.querySelector("#dieFaceInput").value = 1;
+    document.getElementById("upArrow").style.visibility = 'visible';
+    document.getElementById("upDiceArrow").style.visibility = 'visible';
     claim[0] = 0;
     claim[1] = 0;
     amount = 1;
@@ -241,9 +290,20 @@ function challengeAction() {
         scoreBoard[1].innerHTML = playerTwo.points;
         scoreBoard[2].innerHTML = playerThree.points;
         scoreBoard[3].innerHTML = playerFour.points;
+        
+        winner();
 
         onNewGame();
-    }, 5000
+        }, 5000 
     );
 };
 
+function winner(){
+    players.forEach(player => {
+        if (player.points >= 3){
+            player.winner = true;
+            sessionStorage.setItem("Winner", player.name);
+            window.location.href = "gameFinish.html";
+        }
+    });
+}
