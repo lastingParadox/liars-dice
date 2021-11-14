@@ -5,28 +5,28 @@
             <link rel="stylesheet" href="game.css">
             <script type="text/javascript" src="script.js"></script>
         </head>
-        <body onload="onNewGame()">
+        <body onload="initNames()">
             <div id="playerContainer">
                 <div class="playerBox" id="playerOneBox">
-                    <p class="name">Player One<p>
+                    <p class="name" id="playerOneScore">Player One<p>
                     <p class="score">0</p>
                 </div>
                 <div class="playerBox" id="playerTwoBox">
-                    <p class="name">Player Two<p>
+                    <p class="name" id="playerTwoScore">Player Two<p>
                     <p class="score">0</p>
                 </div>
                 <div class="playerBox" id="playerThreeBox">
-                    <p class="name">Player Three<p>
+                    <p class="name" id="playerThreeScore">Player Three<p>
                     <p class="score">0</p>
                 </div>
                 <div class="playerBox" id="playerFourBox">
-                    <p class="name">Player Four<p>
+                    <p class="name" id="playerFourScore">Player Four<p>
                     <p class="score">0</p>
                 </div>
             </div>
             <div id="container">
                 <div class="playerOneHand">
-                    <p>Player One's Hand</p>
+                    <p id="playerOneHand">Player One's Hand</p>
                     <img class="die" src="images/dice-00.svg" id="die-1">
                     <img class="die" src="images/dice-00.svg" id="die-2">
                     <img class="die" src="images/dice-00.svg" id="die-3">
@@ -34,7 +34,7 @@
                     <img class="die" src="images/dice-00.svg" id="die-5">
                 </div>
                 <div class="playerTwoHand">
-                    <p>Player Two's Hand</p>
+                    <p id="playerTwoHand">Player Two's Hand</p>
                     <img class="die" src="images/dice-00.svg" id="die-1">
                     <img class="die" src="images/dice-00.svg" id="die-2">
                     <img class="die" src="images/dice-00.svg" id="die-3">
@@ -42,7 +42,7 @@
                     <img class="die" src="images/dice-00.svg" id="die-5">
                 </div>
                 <div class="playerThreeHand">
-                    <p>Player Three's Hand</p>
+                    <p id="playerThreeHand">Player Three's Hand</p>
                     <img class="die" src="images/dice-00.svg" id="die-1">
                     <img class="die" src="images/dice-00.svg" id="die-2">
                     <img class="die" src="images/dice-00.svg" id="die-3">
@@ -50,7 +50,7 @@
                     <img class="die" src="images/dice-00.svg" id="die-5">
                 </div>
                 <div class="playerFourHand">
-                    <p>Player Four's Hand</p>
+                    <p id="playerFourHand">Player Four's Hand</p>
                     <img class="die" src="images/dice-00.svg" id="die-1">
                     <img class="die" src="images/dice-00.svg" id="die-2">
                     <img class="die" src="images/dice-00.svg" id="die-3">
