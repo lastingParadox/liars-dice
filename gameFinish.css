@@ -1,0 +1,67 @@
+body {
+	background: linear-gradient(60deg, 
+    #ee5252, 
+    #ffee58, 
+    #4cd523, 
+    #2ec1db, 
+    #c250f7, 
+    #f75096);
+	background-size: 500% 500%;
+	animation: gradient 15s ease infinite alternate;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
+
+h2 {
+    margin-top: 10em;
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    background-color: #F58A8A;
+    margin-left: 7em;
+    margin-right: 7em;
+    border-radius: 10px;
+}
+
+.container {
+    height: 200px;
+    position: relative;
+    border: none;
+  }
+
+.buttonContainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 200px;
+    border:none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #F58A8A;
+    box-shadow: 0 15px 35px rgba(25,25,25,0.50);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.buttonContainer :hover {
+    background-color: whitesmoke;
+}
