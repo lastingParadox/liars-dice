@@ -6,7 +6,7 @@
    height="90.077698"
    viewBox="0 0 90.080688 90.077698"
    version="1.1"
-   sodipodi:docname="dice-03.svg"
+   sodipodi:docname="dice-05-claim.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -50,7 +50,7 @@
      transform="translate(-4.9599289,-4.96115)">
     <path
        d="M 86.61173,6.46115 H 13.38221 a 7.05794,7.05794 0 0 0 -6.92106,7.18726 v 72.70653 a 7.05464,7.05464 0 0 0 6.91785,7.18391 h 73.23233 a 7.06452,7.06452 0 0 0 6.92752,-7.194 V 13.71227 A 7.09557,7.09557 0 0 0 86.61173,6.46115 Z"
-       style="fill:#e92e3d;fill-opacity:1;stroke:#e92e3d;stroke-width:3px;stroke-miterlimit:10"
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:3px;stroke-miterlimit:10;stroke-opacity:1"
        id="path24" />
     <ellipse
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
@@ -70,6 +70,20 @@
        style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
        id="path1899-9-2"
        cx="75"
+       cy="75"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9-2-5"
+       cx="75"
+       cy="25"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9-2-5-9"
+       cx="25"
        cy="75"
        rx="9.5043678"
        ry="10.01225" />
