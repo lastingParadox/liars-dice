@@ -150,7 +150,7 @@ function amountUp() {
         document.getElementById("upArrow").style.visibility = 'hidden';
     }
 
-    if (amount + 1 > claim[1] && claim[1] > 1) {
+    if (amount + 1 > claim[0] && claim[1] > 1) {
         document.getElementById("downDiceArrow").style.visibility = 'visible';
     }
 
