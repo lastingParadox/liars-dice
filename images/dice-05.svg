@@ -1,11 +1,100 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-  <title>dice</title>
-  <g>
-    <path d="M86.61133,6.46115H13.379a7.05464,7.05464,0,0,0-6.91784,7.18391V86.35494A7.05464,7.05464,0,0,0,13.379,93.53885H86.621a7.05464,7.05464,0,0,0,6.91784-7.18391V13.65511A7.06452,7.06452,0,0,0,86.61133,6.46115Z" style="fill: #fff;stroke: #e92e3d;stroke-miterlimit: 10;stroke-width: 3px"/>
-    <path d="M26.34067,33.80355a9.13453,9.13453,0,0,1-8.95611-9.29387,9.13778,9.13778,0,0,1,8.95611-9.30727,9.139,9.139,0,0,1,8.96255,9.30727A9.1357,9.1357,0,0,1,26.34067,33.80355Z" style="fill: #e92e3d"/>
-    <path d="M74.71716,83.50482a9.30719,9.30719,0,1,1,8.95611-9.30057A9.13732,9.13732,0,0,1,74.71716,83.50482Z" style="fill: #e92e3d"/>
-    <path d="M74.20115,33.96766a9.13452,9.13452,0,0,1-8.9561-9.29387,8.96248,8.96248,0,1,1,17.9122,0A9.13452,9.13452,0,0,1,74.20115,33.96766Z" style="fill: #e92e3d"/>
-    <path d="M26.56,83.29382a9.30719,9.30719,0,0,1,0-18.60113,9.30694,9.30694,0,0,1,0,18.60113Z" style="fill: #e92e3d"/>
-    <path d="M49.98065,59.39686A9.31067,9.31067,0,1,1,58.93676,50.103,9.13869,9.13869,0,0,1,49.98065,59.39686Z" style="fill: #e92e3d"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   width="90.080688"
+   height="90.077698"
+   viewBox="0 0 90.080688 90.077698"
+   version="1.1"
+   sodipodi:docname="dice-05.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs33" />
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="true"
+     inkscape:zoom="8.01"
+     inkscape:cx="40.761548"
+     inkscape:cy="43.757803"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g28"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1897"
+       originx="-4.9599289"
+       originy="-4.96115" />
+  </sodipodi:namedview>
+  <title
+     id="title22">dice</title>
+  <g
+     id="g28"
+     transform="translate(-4.9599289,-4.96115)">
+    <path
+       d="M 86.61173,6.46115 H 13.38221 a 7.05794,7.05794 0 0 0 -6.92106,7.18726 v 72.70653 a 7.05464,7.05464 0 0 0 6.91785,7.18391 h 73.23233 a 7.06452,7.06452 0 0 0 6.92752,-7.194 V 13.71227 A 7.09557,7.09557 0 0 0 86.61173,6.46115 Z"
+       style="fill:#e92e3d;fill-opacity:1;stroke:#e92e3d;stroke-width:3px;stroke-miterlimit:10"
+       id="path24" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899"
+       cx="50"
+       cy="50"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9"
+       cx="25"
+       cy="25"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9-2"
+       cx="75"
+       cy="75"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9-2-5"
+       cx="75"
+       cy="25"
+       rx="9.5043678"
+       ry="10.01225" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.9755;stroke-opacity:1"
+       id="path1899-9-2-5-9"
+       cx="25"
+       cy="75"
+       rx="9.5043678"
+       ry="10.01225" />
   </g>
+  <metadata
+     id="metadata2168">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>dice</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
 </svg>
