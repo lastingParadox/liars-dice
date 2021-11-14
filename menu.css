@@ -22,8 +22,9 @@ body {
 
 .titlebox{
     border: none;
+    color: white;
     display: block;
-    background-color: #F58A8A;
+    background-color: rgb(65, 13, 15);;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75px;
     text-align: center;
@@ -81,7 +82,7 @@ body {
 .start {
     padding: 25;
     text-align: center;
-    background-color: #F58A8A;
+    background-color: rgb(65, 13, 15);;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75px;
     width: 100%;
@@ -93,12 +94,13 @@ body {
 }
 
 .rules {
-    padding-left: 100px;
+    padding-left: 2em;
+    color: white;
     padding-right: 100px;
     text-align: center;
-    background-color: #F58A8A;
+    background-color: rgb(65, 13, 15);;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     width: 100%;
     display: inline-block;
     margin-top: 50px;
@@ -110,6 +112,7 @@ body {
 
 button {
     text-align: center;
+    color: white;
     cursor: pointer;
 }
 
@@ -118,16 +121,16 @@ button {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, 0%);
-    
 }
 
 .buttons :hover{
-   background-color: whitesmoke;
+   background-color: firebrick;
 }
 
 p {
     border: none;
-    background-color: #F58A8A;
+    background-color: rgb(65, 13, 15);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
