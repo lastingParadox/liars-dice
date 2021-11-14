@@ -41,12 +41,43 @@ playerFour = {
     html: "playerFourHand",
 }
 
-const players = [playerOne, playerTwo, playerThree, playerFour];
+window.players = [playerOne, playerTwo, playerThree, playerFour];
 
 turnCount = 0;
 amount = 1;
 dieFace = 1;
 claim = [0,0]
+
+// Get the names of all players
+function getNames()
+{
+	name1 = document.getElementById("player_1").value;
+	if (name1 === "")
+		name1 = "Player 1";
+	document.getElementById("player_1").value = "";
+
+	name2 = document.getElementById("player_2").value;
+	if (name2 === "")
+		name2 = "Player 2";
+	document.getElementById("player_2").value = "";
+
+	name3 = document.getElementById("player_3").value;
+	if (name3 === "")
+		name3 = "Player 3";
+	document.getElementById("player_3").value = "";
+
+	name4 = document.getElementById("player_4").value;
+	if (name4 === "")
+		name4 = "Player 4";
+	document.getElementById("player_4").value = "";
+
+	window.playerOne.name = name1;
+	playerTwo.name = name2;
+	playerThree.name = name3;
+	playerFour.name = name4;
+
+	players = [playerOne, playerTwo, playerThree, playerFour];
+};
 
 function roll() {
     document.querySelectorAll(".die").forEach(function(die) {
@@ -73,9 +104,21 @@ function onNewGame() {
     amount = 1;
     dieFace = 1;
 
+	window.players = [playerOne, playerTwo, playerThree, playerFour];
+	for (let i = 0; i < 4; i++)
+	{
+		console.log(playerOne.name);
+		console.log(players[i].name);
+	}
+	document.query(".playerOneBox .name").innerHTML = playerOne.name;
+	document.getElementById("name2").innerHTML = players[1].name;
+	document.getElementById("name3").innerHTML = players[2].name;
+	document.getElementById("name4").innerHTML = players[3].name;
+
+
     document.getElementById("amount").innerHTML = amount;
     document.getElementById("dieFaceClaim").setAttribute("src", claimImages[dieFace-1]);
-    
+
     roll();
     players.forEach(player => {
         player.hand.forEach(function(part, index) {
@@ -179,7 +222,7 @@ function claimAction() {
     for (let i = 0; i < 5; i++) {
         document.querySelector("." + players[turnCount % 4].html + " #die-" + (i+1)).setAttribute("src", images[players[turnCount % 4].hand[i]]);
     };
-    
+
     document.getElementById("downArrow").style.visibility = 'hidden';
     document.getElementById("downDiceArrow").style.visibility = 'hidden';
 }
@@ -217,7 +260,7 @@ function challengeAction() {
     })
 
     glow();
-    
+
     setTimeout(function() {
         if (counter < claim[0]) {
             console.log("Player " + (turnCount % 4) + " is a liar! Player " + (turnCount % 4 + 1) + " gets a point!");
@@ -246,4 +289,3 @@ function challengeAction() {
     }, 5000
     );
 };
-
