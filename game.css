@@ -1,23 +1,21 @@
 body {
-    background-color: rgb(201, 114, 114);
+    background: linear-gradient(60deg, 
+    #ee5252, 
+    #ffee58, 
+    #4cd523, 
+    #2ec1db, 
+    #c250f7, 
+    #f75096);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite alternate;
+    height: 100vh;
 }
 
 p {
     margin: 0px 0px 0px 0px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-}
-
-button {
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 10x;
-    border-radius: 0px;
-    background-color: red;
-    color: white;
-    border: none;
 }
 
 #playerContainer {
@@ -82,6 +80,12 @@ button {
 }
 
 #claimButton {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px;
+    color: white;
+    border: none;
     width: 100%;
     align-self: center;
     background-color: green;
@@ -96,6 +100,21 @@ button {
     display: flex;
     flex-direction: row;
     gap: 1em;
+}
+
+#challengeButton {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    border: none;
+}
+
+#challengeButton:hover {
+    transition: all 0.5s;
+    background-color: red;
 }
 
 .amountBox {
