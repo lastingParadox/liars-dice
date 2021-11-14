@@ -44,13 +44,17 @@ button {
     padding: 25px;
     border: none;
     position: absolute;
+    max-height: 62vh;
+    height: auto;
+    max-width: 67vh;
+    width: auto;
     transform: translate(-50%, -50%);
     top: 43%;
     left: 50%;
     background-color: rgb(65, 13, 15);
     box-shadow: 0 15px 35px rgba(50,50,50,0.50);
     border-radius: 8px;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
 }
@@ -68,7 +72,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15em;
+    gap: 5em;
 }
 
 #claim {
@@ -81,7 +85,11 @@ button {
     width: 100%;
     align-self: center;
     background-color: green;
+}
 
+#claimButton:hover {
+    transition: all 0.5s;
+    background-color: rgb(14, 194, 14);
 }
 
 #claimInputs {
@@ -112,7 +120,25 @@ button {
 
 
 .die {
-    width: 120px;
+    max-width: 6.2vw;
+    width: 6.2vw;
+    max-height: 13vh;
+    height: auto;
+}
+
+#terminal {
+    position: absolute;
+    top: 9.3%;
+    left: 2.5%;
+    height: 67vh;
+    width: 45vh;
+    border: 2px solid white;
+    border-radius: 0.3em;
+    padding: 10px 10px;
+    display: inline-block;
+    background-color: black;
+    overflow: auto;
+    z-index: -1;
 }
 
 .glow {

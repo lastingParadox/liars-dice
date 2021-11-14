@@ -104,10 +104,10 @@ function initNames(){
     document.getElementById("playerThreeHand").innerHTML = playerThree.name + "'s Hand";
     document.getElementById("playerFourHand").innerHTML = playerFour.name + "'s Hand";
     
-    console.log(playerOne.name + " " +
-                playerTwo.name + " " +
-                playerThree.name + " " +
-                playerFour.name);
+    //console.log(playerOne.name + " " +
+    //            playerTwo.name + " " +
+    //            playerThree.name + " " +
+    //            playerFour.name);
     
     onNewGame();
 }
@@ -130,7 +130,7 @@ function onNewGame() {
         player.hand.forEach(function(part, index) {
             this[index] = Math.floor(Math.random() * 6) + 1;
         }, player.hand);
-        console.log(`${player.name}: ${player.hand}`);
+        //console.log(`${player.name}: ${player.hand}`);
     });
     for (let i = 0; i < 5; i++) {
         document.querySelector("." + players[turnCount % 4].html + " #die-" + (i+1)).setAttribute("src", images[players[turnCount % 4].hand[i]]);
@@ -208,16 +208,23 @@ function diceFaceDown() {
 }
 
 function claimAction() {
+    const terminal = document.getElementById("terminal");
+    let p = document.createElement("p");
 
     if(amount === claim[0] && dieFace === claim[1]) {
-        console.log("You need to increase one of the fields to make a claim!");
+        p.innerHTML = ("You need to increase one of the fields to make a claim!");
+        p.style.color = "red";
+        terminal.append(p);
         return;
     }
 
     claim[0] = amount;
     claim[1] = dieFace;
 
-    console.log("Player " + (turnCount % 4 + 1) + " claims " + claim[0] + " " + claim[1] + "s!");
+    p.innerHTML = (players[turnCount % 4].name + " claims " + claim[0] + " " + claim[1] + "s!");
+    terminal.append(p);
+
+    console.log(players[turnCount % 4].name + " claims " + claim[0] + " " + claim[1] + "s!");
 
     for (let i = 0; i < 5; i++) {
         document.querySelector("." + players[turnCount % 4].html + " #die-" + (i+1)).setAttribute("src", images[0]);
@@ -255,6 +262,10 @@ function challengeAction() {
         return;
     }
 
+    const terminal = document.getElementById("terminal");
+    let p = document.createElement("p");
+    let d = document.createElement("p");
+
     let counter = 0;
     players.forEach(player => {
         for (let i = 0; i < 5; i++) {
@@ -269,14 +280,26 @@ function challengeAction() {
     
     setTimeout(function() {
         if (counter < claim[0]) {
-            console.log("Player " + (turnCount % 4) + " is a liar! Player " + (turnCount % 4 + 1) + " gets a point!");
+            p.innerHTML = (players[(turnCount-1) % 4].name + " is a liar! " + players[turnCount % 4].name + " gets a point!");
+            terminal.append(p);
+            console.log(players[(turnCount-1) % 4].name + " is a liar! " + players[turnCount % 4].name + " gets a point!");
+
             players[turnCount % 4].points++
-            console.log("Player " + (turnCount % 4 + 1) + " has " + players[turnCount % 4].points + " points.");
+
+            d.innerHTML = (players[turnCount % 4].name + " has " + players[turnCount % 4].points + " points.");
+            terminal.append(d);
+            console.log(players[turnCount % 4].name + " has " + players[turnCount % 4].points + " points.");
         }
         else {
-            console.log("Player " + (turnCount % 4 + 1) + "'s challenge failed! Player " + (turnCount % 4) + " gets a point!");
+            p.innerHTML = (players[turnCount % 4].name + "'s challenge failed! " + players[(turnCount-1) % 4].name + " gets a point!");
+            terminal.append(p);
+            console.log(players[turnCount % 4].name + "'s challenge failed! " + players[(turnCount-1) % 4].name + " gets a point!");
+
             players[(turnCount-1) % 4].points++
-            console.log("Player " + (turnCount % 4) + " has " + players[(turnCount-1) % 4].points + " points.");
+
+            d.innerHTML = (players[(turnCount-1) % 4].name + " has " + players[(turnCount-1) % 4].points + " points.");
+            terminal.append(d);
+            console.log(players[(turnCount-1) % 4].name + " has " + players[(turnCount-1) % 4].points + " points.");
         }
 
         players.forEach(player => {
@@ -302,6 +325,7 @@ function winner(){
     players.forEach(player => {
         if (player.points >= 3){
             player.winner = true;
+            console.log(player.name + " wins the game!")
             sessionStorage.setItem("Winner", player.name);
             window.location.href = "gameFinish.html";
         }
